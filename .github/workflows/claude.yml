@@ -51,22 +51,18 @@ jobs:
             set of tools to launch a browser and interact with the app.
 
           mcp_config: |
-          {
-            "mcpServers":
             {
-              "playwright": 
-              {
-                "command": "npx",
-                "args": 
-                [
-                  "@playwright/mcp@latest",
-                  "--allowed-origins",
-                  "http://localhost:3000;cdn,tailwindcss.com;esm.sh"
-                ]
+              "mcpServers": {
+                "playwright": {
+                  "command": "npx",
+                  "args": [
+                    "@playwright/mcp@latest",
+                    "--allowed-origins",
+                    "http://localhost:3000;cdn.tailwindcss.com;esm.sh"
+                  ]
+                }
               }
             }
-
-          }  
 
           allowed_tools: "Bash(npm:*), mcp__playwright__browser__snapshot,mcp__playwright__browser__click,"
 
