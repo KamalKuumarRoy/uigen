@@ -50,7 +50,7 @@ jobs:
             are beign written to logs.txt. If needed, use the mcp_playwright
             set of tools to launch a browser and interact with the app.
 
-          mcp_congfig: |
+          mcp_config: |
           {
             "mcpServers":
             {
